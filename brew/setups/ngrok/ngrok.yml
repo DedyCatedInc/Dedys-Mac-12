@@ -1,0 +1,8 @@
+version: 3
+agent:
+  authtoken: 3HoK1qqxRcDEErxgD4a2x_6StL1QKQmUhE8kWAX6FwN
+tunnels:
+  remote:
+    labels:
+      - edge=edgtcp_2rUE0Vm2xpmz3yCsORlFk9Uahpc
+    addr: 22

@@ -1,0 +1,72 @@
+--->  Computing dependencies for openvpn2
+The following dependencies will be installed: 
+ lz4
+ lzo2
+ openssl
+ openssl3
+ zlib
+Continue? [Y/n]: y
+--->  Fetching archive for lzo2
+--->  Attempting to fetch lzo2-2.10_0.darwin_21.x86_64.tbz2 from http://jog.id.packages.macports.org/macports/packages/lzo2
+--->  Attempting to fetch lzo2-2.10_0.darwin_21.x86_64.tbz2.rmd160 from http://jog.id.packages.macports.org/macports/packages/lzo2
+--->  Installing lzo2 @2.10_0
+--->  Activating lzo2 @2.10_0
+--->  Cleaning lzo2
+--->  Fetching archive for lz4
+--->  Attempting to fetch lz4-1.10.0_0.darwin_21.x86_64.tbz2 from http://jog.id.packages.macports.org/macports/packages/lz4
+--->  Attempting to fetch lz4-1.10.0_0.darwin_21.x86_64.tbz2.rmd160 from http://jog.id.packages.macports.org/macports/packages/lz4
+--->  Installing lz4 @1.10.0_0
+--->  Activating lz4 @1.10.0_0
+--->  Cleaning lz4
+--->  Fetching archive for zlib
+--->  Attempting to fetch zlib-1.3.1_0.darwin_21.x86_64.tbz2 from http://jog.id.packages.macports.org/macports/packages/zlib
+--->  Attempting to fetch zlib-1.3.1_0.darwin_21.x86_64.tbz2.rmd160 from http://jog.id.packages.macports.org/macports/packages/zlib
+--->  Installing zlib @1.3.1_0
+--->  Activating zlib @1.3.1_0
+--->  Cleaning zlib
+--->  Fetching archive for openssl3
+--->  Attempting to fetch openssl3-3.4.0_0.darwin_21.x86_64.tbz2 from http://jog.id.packages.macports.org/macports/packages/openssl3
+--->  Attempting to fetch openssl3-3.4.0_0.darwin_21.x86_64.tbz2.rmd160 from http://jog.id.packages.macports.org/macports/packages/openssl3
+--->  Installing openssl3 @3.4.0_0
+--->  Activating openssl3 @3.4.0_0
+--->  Cleaning openssl3
+--->  Fetching archive for openssl
+--->  Attempting to fetch openssl-3_21.darwin_21.x86_64.tbz2 from http://jog.id.packages.macports.org/macports/packages/openssl
+--->  Attempting to fetch openssl-3_21.darwin_21.x86_64.tbz2.rmd160 from http://jog.id.packages.macports.org/macports/packages/openssl
+--->  Installing openssl @3_21
+--->  Activating openssl @3_21
+--->  Cleaning openssl
+--->  Fetching archive for openvpn2
+--->  Attempting to fetch openvpn2-2.6.12_0.darwin_21.x86_64.tbz2 from http://jog.id.packages.macports.org/macports/packages/openvpn2
+--->  Attempting to fetch openvpn2-2.6.12_0.darwin_21.x86_64.tbz2.rmd160 from http://jog.id.packages.macports.org/macports/packages/openvpn2
+--->  Installing openvpn2 @2.6.12_0
+--->  Activating openvpn2 @2.6.12_0
+--->  Cleaning openvpn2
+--->  Updating database of binaries
+--->  Scanning binaries for linking errors
+--->  No broken files found.
+--->  No broken ports found.
+--->  Some of the ports you installed have notes:
+  openvpn2 has the following notes:
+    If not existing, a default server.conf has been created in /opt/local/etc/openvpn2/
+    Startup launch script is set to start with it.
+    Please adjust to your need, especially passphrase or certificates
+    
+    For minimal configuration, you need to follow these steps
+    
+    A) With a shared secret
+        $ openvpn2 --genkey --secret /opt/local/etc/openvpn2/static.key
+       Use 'secret static.key' in your config file
+    
+    B) With self-signed certificates, follow
+       https://openvpn.net/index.php/open-source/documentation/howto.html#pki
+    
+    Alternate GUI: https://tunnelblick.net/
+    
+    Openvpn uses a tun device to create its network interface. It could either be:
+    - utun device built into OSX 10.7+
+    - tun device from port tuntaposx
+
+    A startup item has been generated that will aid in starting openvpn2 with launchd. It is disabled by default. Execute the following command to start it, and to cause it to launch at startup:
+    
+        port load openvpn2

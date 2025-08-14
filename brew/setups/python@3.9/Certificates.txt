@@ -1,0 +1,5 @@
+brew installation of Python 3.6.1: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed
+https://stackoverflow.com/questions/44649449/brew-installation-of-python-3-6-1-ssl-certificate-verify-failed-certificate/44649450#44649450
+
+It seems that, for some reason, Brew has not run the Install Certificates.command that comes in the Python3 bundle for Mac.
+The solution to this issue is to run the following script (copied from Install Certificates.command) after brew install python3:

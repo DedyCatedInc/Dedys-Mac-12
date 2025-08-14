@@ -1,0 +1,13 @@
+2021-04-15 22:42:31.803 WIB [58818] LOG:  starting PostgreSQL 13.2 on x86_64-apple-darwin19.6.0, compiled by Apple clang version 12.0.0 (clang-1200.0.32.29), 64-bit
+2021-04-15 22:42:31.830 WIB [58818] LOG:  listening on IPv6 address "::1", port 5432
+2021-04-15 22:42:31.830 WIB [58818] LOG:  listening on IPv4 address "127.0.0.1", port 5432
+2021-04-15 22:42:31.832 WIB [58818] LOG:  listening on Unix socket "/tmp/.s.PGSQL.5432"
+2021-04-15 22:42:31.841 WIB [58820] LOG:  database system was shut down at 2021-04-15 22:41:41 WIB
+2021-04-15 22:42:31.855 WIB [58818] LOG:  database system is ready to accept connections
+2021-04-15 22:42:49.663 WIB [59007] FATAL:  lock file "postmaster.pid" already exists
+2021-04-15 22:42:49.663 WIB [59007] HINT:  Is another postmaster (PID 58818) running in data directory "/usr/local/var/postgres"?
+2021-04-15 22:43:15.804 WIB [58818] LOG:  received fast shutdown request
+2021-04-15 22:43:15.804 WIB [58818] LOG:  aborting any active transactions
+2021-04-15 22:43:15.806 WIB [58818] LOG:  background worker "logical replication launcher" (PID 58826) exited with exit code 1
+2021-04-15 22:43:15.806 WIB [58821] LOG:  shutting down
+2021-04-15 22:43:15.815 WIB [58818] LOG:  database system is shut down
