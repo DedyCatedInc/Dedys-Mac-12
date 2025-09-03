@@ -1,9 +1,7 @@
-version: '3.8'
-
 services:
   nessus01:
     image: tenableofficial/nessus
-    container_name: nessus
+    container_name: nessus01
     environment:
       - TZ=Asia/Jakarta
     ports:
@@ -11,25 +9,25 @@ services:
     restart: unless-stopped
   nessus02:
     image: tenableofficial/nessus
-    container_name: nessus
+    container_name: nessus02
     environment:
       - TZ=Asia/Jakarta
     ports:
-      - "8802:8834"
+      - "8801:8834"
     restart: unless-stopped
   nessus03:
     image: tenableofficial/nessus
-    container_name: nessus
+    container_name: nessus03
     environment:
       - TZ=Asia/Jakarta
     ports:
-      - "8803:8834"
+      - "8801:8834"
     restart: unless-stopped
   nessus04:
     image: tenableofficial/nessus
-    container_name: nessus
+    container_name: nessus04
     environment:
       - TZ=Asia/Jakarta
     ports:
-      - "8804:8834"
+      - "8801:8834"
     restart: unless-stopped
