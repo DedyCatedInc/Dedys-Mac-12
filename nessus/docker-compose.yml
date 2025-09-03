@@ -13,7 +13,7 @@ services:
     environment:
       - TZ=Asia/Jakarta
     ports:
-      - "8801:8834"
+      - "8802:8834"
     restart: unless-stopped
   nessus03:
     image: tenableofficial/nessus
@@ -21,7 +21,7 @@ services:
     environment:
       - TZ=Asia/Jakarta
     ports:
-      - "8801:8834"
+      - "8803:8834"
     restart: unless-stopped
   nessus04:
     image: tenableofficial/nessus
@@ -29,5 +29,5 @@ services:
     environment:
       - TZ=Asia/Jakarta
     ports:
-      - "8801:8834"
+      - "8804:8834"
     restart: unless-stopped
