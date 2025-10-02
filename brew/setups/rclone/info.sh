@@ -6,5 +6,5 @@ FILENAME0=`basename $0`; FILE=$(echo $FILENAME0 | cut -d '.' -f 1)
 echo [$BASEDIR00] [$CURRDIR00] [$FILENAME0] [$FILE]
 echo "......."
 cd $BASEDIR00
-jenv add $(/usr/libexec/java_home -v1.8)
+brew $FILE $CURRDIR00
 exit 0
