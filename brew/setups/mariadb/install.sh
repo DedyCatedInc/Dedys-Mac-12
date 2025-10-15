@@ -9,6 +9,5 @@ cd $BASEDIR00
 ./unlink.sh
 brew doctor
 brew update
-brew upgrade
 brew $FILE $CURRDIR00
 exit 0

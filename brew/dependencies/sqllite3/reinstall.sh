@@ -13,7 +13,6 @@ echo "......."
 USER=$(whoami)
 chown -R $USER /usr/local/Cellar
 brew update
-brew upgrade
 brew $FILE $CURRDIR00
 brew cleanup
 exit 0

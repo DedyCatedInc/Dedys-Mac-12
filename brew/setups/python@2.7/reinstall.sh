@@ -7,7 +7,6 @@ echo [$BASEDIR00] [$CURRDIR00] [$FILENAME0] [$FILE]
 echo "......."
 cd $BASEDIR00
 brew update
-brew upgrade
 brew $FILE $CURRDIR00
 brew cleanup
 exit 0

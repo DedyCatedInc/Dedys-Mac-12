@@ -8,7 +8,6 @@ echo "......."
 cd $BASEDIR00
 chmod -R 777 /usr/local/Cellar
 brew update
-brew upgrade
 brew $FILE $CURRDIR00
 brew cleanup
 chmod -R 777 /usr/local/Cellar
