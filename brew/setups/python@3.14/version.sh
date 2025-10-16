@@ -5,12 +5,11 @@ CURRDIR00=${BASEDIR00##*/}
 FILENAME0=`basename $0`; FILE=$(echo $FILENAME0 | cut -d '.' -f 1)
 echo [$BASEDIR00] [$CURRDIR00] [$FILENAME0] [$FILE]
 echo "......."
-cd $BASEDIR00
-chmod -R 777 /usr/local/Cellar
-rm -rf ~/Library/Caches/Homebrew/downloads/*
-rm -rf ~/Library/Caches/Homebrew/api/*
-brew update
-brew $FILE $CURRDIR00
-brew cleanup
-chmod -R 777 /usr/local/Cellar
+echo "pip and python version"
+pip --version
+python --version
+echo "......."
+echo "pip3 and python3 version"
+pip3 --version
+python3 --version
 exit 0
