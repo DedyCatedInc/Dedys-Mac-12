@@ -20,5 +20,5 @@ case "$1" in
     echo "Invalid argument $1"
     ;;
 esac
-~/commands/docker/ps/all.sh
+docker ps -a
 exit 0
