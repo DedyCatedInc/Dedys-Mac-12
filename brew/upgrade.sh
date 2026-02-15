@@ -7,7 +7,7 @@ echo [$BASEDIR00] [$CURRDIR00] [$FILENAME0] [$FILE]
 echo "......."
 cd $BASEDIR00
 sudo xcode-select -r
-USER=$(whoami)
+USER=$(whoami) && echo [$USER]
 chown -R $USER /usr/local/Cellar
 brew ${FILE}
 exit 0
