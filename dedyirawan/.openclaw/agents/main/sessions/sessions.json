@@ -1,0 +1,589 @@
+{
+  "agent:main:main": {
+    "sessionId": "c95f3f59-d044-4825-94d2-22547fa45e90",
+    "updatedAt": 1771173309226,
+    "systemSent": true,
+    "abortedLastRun": false,
+    "chatType": "direct",
+    "deliveryContext": {
+      "channel": "webchat"
+    },
+    "lastChannel": "webchat",
+    "origin": {
+      "provider": "webchat",
+      "surface": "webchat",
+      "chatType": "direct"
+    },
+    "sessionFile": "/Users/dedyirawan/.openclaw/agents/main/sessions/c95f3f59-d044-4825-94d2-22547fa45e90.jsonl",
+    "compactionCount": 0,
+    "skillsSnapshot": {
+      "prompt": "\n\nThe following skills provide specialized instructions for specific tasks.\nUse the read tool to load a skill's file when the task matches its description.\nWhen a skill file references a relative path, resolve it against the skill directory (parent of SKILL.md / dirname of the path) and use that absolute path in tool commands.\n\n<available_skills>\n  <skill>\n    <name>1password</name>\n    <description>Set up and use 1Password CLI (op). Use when installing the CLI, enabling desktop app integration, signing in (single or multi-account), or reading/injecting/running secrets via op.</description>\n    <location>/Users/dedyirawan/.nvm/versions/node/v22.22.0/lib/node_modules/openclaw/skills/1password/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>apple-notes</name>\n    <description>Manage Apple Notes via the `memo` CLI on macOS (create, view, edit, delete, search, move, and export notes). Use when a user asks OpenClaw to add a note, list notes, search notes, or manage note folders.</description>\n    <location>/Users/dedyirawan/.nvm/versions/node/v22.22.0/lib/node_modules/openclaw/skills/apple-notes/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>bear-notes</name>\n    <description>Create, search, and manage Bear notes via grizzly CLI.</description>\n    <location>/Users/dedyirawan/.nvm/versions/node/v22.22.0/lib/node_modules/openclaw/skills/bear-notes/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>blogwatcher</name>\n    <description>Monitor blogs and RSS/Atom feeds for updates using the blogwatcher CLI.</description>\n    <location>/Users/dedyirawan/.nvm/versions/node/v22.22.0/lib/node_modules/openclaw/skills/blogwatcher/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>blucli</name>\n    <description>BluOS CLI (blu) for discovery, playback, grouping, and volume.</description>\n    <location>/Users/dedyirawan/.nvm/versions/node/v22.22.0/lib/node_modules/openclaw/skills/blucli/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>clawhub</name>\n    <description>Use the ClawHub CLI to search, install, update, and publish agent skills from clawhub.com. Use when you need to fetch new skills on the fly, sync installed skills to latest or a specific version, or publish new/updated skill folders with the npm-installed clawhub CLI.</description>\n    <location>/Users/dedyirawan/.nvm/versions/node/v22.22.0/lib/node_modules/openclaw/skills/clawhub/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>eightctl</name>\n    <description>Control Eight Sleep pods (status, temperature, alarms, schedules).</description>\n    <location>/Users/dedyirawan/.nvm/versions/node/v22.22.0/lib/node_modules/openclaw/skills/eightctl/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>gifgrep</name>\n    <description>Search GIF providers with CLI/TUI, download results, and extract stills/sheets.</description>\n    <location>/Users/dedyirawan/.nvm/versions/node/v22.22.0/lib/node_modules/openclaw/skills/gifgrep/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>github</name>\n    <description>Interact with GitHub using the `gh` CLI. Use `gh issue`, `gh pr`, `gh run`, and `gh api` for issues, PRs, CI runs, and advanced queries.</description>\n    <location>/Users/dedyirawan/.nvm/versions/node/v22.22.0/lib/node_modules/openclaw/skills/github/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>gog</name>\n    <description>Google Workspace CLI for Gmail, Calendar, Drive, Contacts, Sheets, and Docs.</description>\n    <location>/Users/dedyirawan/.nvm/versions/node/v22.22.0/lib/node_modules/openclaw/skills/gog/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>healthcheck</name>\n    <description>Host security hardening and risk-tolerance configuration for OpenClaw deployments. Use when a user asks for security audits, firewall/SSH/update hardening, risk posture, exposure review, OpenClaw cron scheduling for periodic checks, or version status checks on a machine running OpenClaw (laptop, workstation, Pi, VPS).</description>\n    <location>/Users/dedyirawan/.nvm/versions/node/v22.22.0/lib/node_modules/openclaw/skills/healthcheck/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>mcporter</name>\n    <description>Use the mcporter CLI to list, configure, auth, and call MCP servers/tools directly (HTTP or stdio), including ad-hoc servers, config edits, and CLI/type generation.</description>\n    <location>/Users/dedyirawan/.nvm/versions/node/v22.22.0/lib/node_modules/openclaw/skills/mcporter/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>obsidian</name>\n    <description>Work with Obsidian vaults (plain Markdown notes) and automate via obsidian-cli.</description>\n    <location>/Users/dedyirawan/.nvm/versions/node/v22.22.0/lib/node_modules/openclaw/skills/obsidian/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>openhue</name>\n    <description>Control Philips Hue lights/scenes via the OpenHue CLI.</description>\n    <location>/Users/dedyirawan/.nvm/versions/node/v22.22.0/lib/node_modules/openclaw/skills/openhue/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>oracle</name>\n    <description>Best practices for using the oracle CLI (prompt + file bundling, engines, sessions, and file attachment patterns).</description>\n    <location>/Users/dedyirawan/.nvm/versions/node/v22.22.0/lib/node_modules/openclaw/skills/oracle/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>ordercli</name>\n    <description>Foodora-only CLI for checking past orders and active order status (Deliveroo WIP).</description>\n    <location>/Users/dedyirawan/.nvm/versions/node/v22.22.0/lib/node_modules/openclaw/skills/ordercli/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>skill-creator</name>\n    <description>Create or update AgentSkills. Use when designing, structuring, or packaging skills with scripts, references, and assets.</description>\n    <location>/Users/dedyirawan/.nvm/versions/node/v22.22.0/lib/node_modules/openclaw/skills/skill-creator/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>songsee</name>\n    <description>Generate spectrograms and feature-panel visualizations from audio with the songsee CLI.</description>\n    <location>/Users/dedyirawan/.nvm/versions/node/v22.22.0/lib/node_modules/openclaw/skills/songsee/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>sonoscli</name>\n    <description>Control Sonos speakers (discover/status/play/volume/group).</description>\n    <location>/Users/dedyirawan/.nvm/versions/node/v22.22.0/lib/node_modules/openclaw/skills/sonoscli/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>things-mac</name>\n    <description>Manage Things 3 via the `things` CLI on macOS (add/update projects+todos via URL scheme; read/search/list from the local Things database). Use when a user asks OpenClaw to add a task to Things, list inbox/today/upcoming, search tasks, or inspect projects/areas/tags.</description>\n    <location>/Users/dedyirawan/.nvm/versions/node/v22.22.0/lib/node_modules/openclaw/skills/things-mac/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>wacli</name>\n    <description>Send WhatsApp messages to other people or search/sync WhatsApp history via the wacli CLI (not for normal user chats).</description>\n    <location>/Users/dedyirawan/.nvm/versions/node/v22.22.0/lib/node_modules/openclaw/skills/wacli/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>weather</name>\n    <description>Get current weather and forecasts (no API key required).</description>\n    <location>/Users/dedyirawan/.nvm/versions/node/v22.22.0/lib/node_modules/openclaw/skills/weather/SKILL.md</location>\n  </skill>\n</available_skills>",
+      "skills": [
+        {
+          "name": "1password"
+        },
+        {
+          "name": "apple-notes"
+        },
+        {
+          "name": "bear-notes"
+        },
+        {
+          "name": "blogwatcher"
+        },
+        {
+          "name": "blucli"
+        },
+        {
+          "name": "clawhub"
+        },
+        {
+          "name": "eightctl"
+        },
+        {
+          "name": "gifgrep"
+        },
+        {
+          "name": "github"
+        },
+        {
+          "name": "gog"
+        },
+        {
+          "name": "healthcheck"
+        },
+        {
+          "name": "mcporter"
+        },
+        {
+          "name": "obsidian"
+        },
+        {
+          "name": "openhue"
+        },
+        {
+          "name": "oracle"
+        },
+        {
+          "name": "ordercli"
+        },
+        {
+          "name": "skill-creator"
+        },
+        {
+          "name": "songsee"
+        },
+        {
+          "name": "sonoscli"
+        },
+        {
+          "name": "things-mac"
+        },
+        {
+          "name": "wacli"
+        },
+        {
+          "name": "weather"
+        }
+      ],
+      "resolvedSkills": [
+        {
+          "name": "1password",
+          "description": "Set up and use 1Password CLI (op). Use when installing the CLI, enabling desktop app integration, signing in (single or multi-account), or reading/injecting/running secrets via op.",
+          "filePath": "/Users/dedyirawan/.nvm/versions/node/v22.22.0/lib/node_modules/openclaw/skills/1password/SKILL.md",
+          "baseDir": "/Users/dedyirawan/.nvm/versions/node/v22.22.0/lib/node_modules/openclaw/skills/1password",
+          "source": "openclaw-bundled",
+          "disableModelInvocation": false
+        },
+        {
+          "name": "apple-notes",
+          "description": "Manage Apple Notes via the `memo` CLI on macOS (create, view, edit, delete, search, move, and export notes). Use when a user asks OpenClaw to add a note, list notes, search notes, or manage note folders.",
+          "filePath": "/Users/dedyirawan/.nvm/versions/node/v22.22.0/lib/node_modules/openclaw/skills/apple-notes/SKILL.md",
+          "baseDir": "/Users/dedyirawan/.nvm/versions/node/v22.22.0/lib/node_modules/openclaw/skills/apple-notes",
+          "source": "openclaw-bundled",
+          "disableModelInvocation": false
+        },
+        {
+          "name": "bear-notes",
+          "description": "Create, search, and manage Bear notes via grizzly CLI.",
+          "filePath": "/Users/dedyirawan/.nvm/versions/node/v22.22.0/lib/node_modules/openclaw/skills/bear-notes/SKILL.md",
+          "baseDir": "/Users/dedyirawan/.nvm/versions/node/v22.22.0/lib/node_modules/openclaw/skills/bear-notes",
+          "source": "openclaw-bundled",
+          "disableModelInvocation": false
+        },
+        {
+          "name": "blogwatcher",
+          "description": "Monitor blogs and RSS/Atom feeds for updates using the blogwatcher CLI.",
+          "filePath": "/Users/dedyirawan/.nvm/versions/node/v22.22.0/lib/node_modules/openclaw/skills/blogwatcher/SKILL.md",
+          "baseDir": "/Users/dedyirawan/.nvm/versions/node/v22.22.0/lib/node_modules/openclaw/skills/blogwatcher",
+          "source": "openclaw-bundled",
+          "disableModelInvocation": false
+        },
+        {
+          "name": "blucli",
+          "description": "BluOS CLI (blu) for discovery, playback, grouping, and volume.",
+          "filePath": "/Users/dedyirawan/.nvm/versions/node/v22.22.0/lib/node_modules/openclaw/skills/blucli/SKILL.md",
+          "baseDir": "/Users/dedyirawan/.nvm/versions/node/v22.22.0/lib/node_modules/openclaw/skills/blucli",
+          "source": "openclaw-bundled",
+          "disableModelInvocation": false
+        },
+        {
+          "name": "clawhub",
+          "description": "Use the ClawHub CLI to search, install, update, and publish agent skills from clawhub.com. Use when you need to fetch new skills on the fly, sync installed skills to latest or a specific version, or publish new/updated skill folders with the npm-installed clawhub CLI.",
+          "filePath": "/Users/dedyirawan/.nvm/versions/node/v22.22.0/lib/node_modules/openclaw/skills/clawhub/SKILL.md",
+          "baseDir": "/Users/dedyirawan/.nvm/versions/node/v22.22.0/lib/node_modules/openclaw/skills/clawhub",
+          "source": "openclaw-bundled",
+          "disableModelInvocation": false
+        },
+        {
+          "name": "eightctl",
+          "description": "Control Eight Sleep pods (status, temperature, alarms, schedules).",
+          "filePath": "/Users/dedyirawan/.nvm/versions/node/v22.22.0/lib/node_modules/openclaw/skills/eightctl/SKILL.md",
+          "baseDir": "/Users/dedyirawan/.nvm/versions/node/v22.22.0/lib/node_modules/openclaw/skills/eightctl",
+          "source": "openclaw-bundled",
+          "disableModelInvocation": false
+        },
+        {
+          "name": "gifgrep",
+          "description": "Search GIF providers with CLI/TUI, download results, and extract stills/sheets.",
+          "filePath": "/Users/dedyirawan/.nvm/versions/node/v22.22.0/lib/node_modules/openclaw/skills/gifgrep/SKILL.md",
+          "baseDir": "/Users/dedyirawan/.nvm/versions/node/v22.22.0/lib/node_modules/openclaw/skills/gifgrep",
+          "source": "openclaw-bundled",
+          "disableModelInvocation": false
+        },
+        {
+          "name": "github",
+          "description": "Interact with GitHub using the `gh` CLI. Use `gh issue`, `gh pr`, `gh run`, and `gh api` for issues, PRs, CI runs, and advanced queries.",
+          "filePath": "/Users/dedyirawan/.nvm/versions/node/v22.22.0/lib/node_modules/openclaw/skills/github/SKILL.md",
+          "baseDir": "/Users/dedyirawan/.nvm/versions/node/v22.22.0/lib/node_modules/openclaw/skills/github",
+          "source": "openclaw-bundled",
+          "disableModelInvocation": false
+        },
+        {
+          "name": "gog",
+          "description": "Google Workspace CLI for Gmail, Calendar, Drive, Contacts, Sheets, and Docs.",
+          "filePath": "/Users/dedyirawan/.nvm/versions/node/v22.22.0/lib/node_modules/openclaw/skills/gog/SKILL.md",
+          "baseDir": "/Users/dedyirawan/.nvm/versions/node/v22.22.0/lib/node_modules/openclaw/skills/gog",
+          "source": "openclaw-bundled",
+          "disableModelInvocation": false
+        },
+        {
+          "name": "healthcheck",
+          "description": "Host security hardening and risk-tolerance configuration for OpenClaw deployments. Use when a user asks for security audits, firewall/SSH/update hardening, risk posture, exposure review, OpenClaw cron scheduling for periodic checks, or version status checks on a machine running OpenClaw (laptop, workstation, Pi, VPS).",
+          "filePath": "/Users/dedyirawan/.nvm/versions/node/v22.22.0/lib/node_modules/openclaw/skills/healthcheck/SKILL.md",
+          "baseDir": "/Users/dedyirawan/.nvm/versions/node/v22.22.0/lib/node_modules/openclaw/skills/healthcheck",
+          "source": "openclaw-bundled",
+          "disableModelInvocation": false
+        },
+        {
+          "name": "mcporter",
+          "description": "Use the mcporter CLI to list, configure, auth, and call MCP servers/tools directly (HTTP or stdio), including ad-hoc servers, config edits, and CLI/type generation.",
+          "filePath": "/Users/dedyirawan/.nvm/versions/node/v22.22.0/lib/node_modules/openclaw/skills/mcporter/SKILL.md",
+          "baseDir": "/Users/dedyirawan/.nvm/versions/node/v22.22.0/lib/node_modules/openclaw/skills/mcporter",
+          "source": "openclaw-bundled",
+          "disableModelInvocation": false
+        },
+        {
+          "name": "obsidian",
+          "description": "Work with Obsidian vaults (plain Markdown notes) and automate via obsidian-cli.",
+          "filePath": "/Users/dedyirawan/.nvm/versions/node/v22.22.0/lib/node_modules/openclaw/skills/obsidian/SKILL.md",
+          "baseDir": "/Users/dedyirawan/.nvm/versions/node/v22.22.0/lib/node_modules/openclaw/skills/obsidian",
+          "source": "openclaw-bundled",
+          "disableModelInvocation": false
+        },
+        {
+          "name": "openhue",
+          "description": "Control Philips Hue lights/scenes via the OpenHue CLI.",
+          "filePath": "/Users/dedyirawan/.nvm/versions/node/v22.22.0/lib/node_modules/openclaw/skills/openhue/SKILL.md",
+          "baseDir": "/Users/dedyirawan/.nvm/versions/node/v22.22.0/lib/node_modules/openclaw/skills/openhue",
+          "source": "openclaw-bundled",
+          "disableModelInvocation": false
+        },
+        {
+          "name": "oracle",
+          "description": "Best practices for using the oracle CLI (prompt + file bundling, engines, sessions, and file attachment patterns).",
+          "filePath": "/Users/dedyirawan/.nvm/versions/node/v22.22.0/lib/node_modules/openclaw/skills/oracle/SKILL.md",
+          "baseDir": "/Users/dedyirawan/.nvm/versions/node/v22.22.0/lib/node_modules/openclaw/skills/oracle",
+          "source": "openclaw-bundled",
+          "disableModelInvocation": false
+        },
+        {
+          "name": "ordercli",
+          "description": "Foodora-only CLI for checking past orders and active order status (Deliveroo WIP).",
+          "filePath": "/Users/dedyirawan/.nvm/versions/node/v22.22.0/lib/node_modules/openclaw/skills/ordercli/SKILL.md",
+          "baseDir": "/Users/dedyirawan/.nvm/versions/node/v22.22.0/lib/node_modules/openclaw/skills/ordercli",
+          "source": "openclaw-bundled",
+          "disableModelInvocation": false
+        },
+        {
+          "name": "skill-creator",
+          "description": "Create or update AgentSkills. Use when designing, structuring, or packaging skills with scripts, references, and assets.",
+          "filePath": "/Users/dedyirawan/.nvm/versions/node/v22.22.0/lib/node_modules/openclaw/skills/skill-creator/SKILL.md",
+          "baseDir": "/Users/dedyirawan/.nvm/versions/node/v22.22.0/lib/node_modules/openclaw/skills/skill-creator",
+          "source": "openclaw-bundled",
+          "disableModelInvocation": false
+        },
+        {
+          "name": "songsee",
+          "description": "Generate spectrograms and feature-panel visualizations from audio with the songsee CLI.",
+          "filePath": "/Users/dedyirawan/.nvm/versions/node/v22.22.0/lib/node_modules/openclaw/skills/songsee/SKILL.md",
+          "baseDir": "/Users/dedyirawan/.nvm/versions/node/v22.22.0/lib/node_modules/openclaw/skills/songsee",
+          "source": "openclaw-bundled",
+          "disableModelInvocation": false
+        },
+        {
+          "name": "sonoscli",
+          "description": "Control Sonos speakers (discover/status/play/volume/group).",
+          "filePath": "/Users/dedyirawan/.nvm/versions/node/v22.22.0/lib/node_modules/openclaw/skills/sonoscli/SKILL.md",
+          "baseDir": "/Users/dedyirawan/.nvm/versions/node/v22.22.0/lib/node_modules/openclaw/skills/sonoscli",
+          "source": "openclaw-bundled",
+          "disableModelInvocation": false
+        },
+        {
+          "name": "things-mac",
+          "description": "Manage Things 3 via the `things` CLI on macOS (add/update projects+todos via URL scheme; read/search/list from the local Things database). Use when a user asks OpenClaw to add a task to Things, list inbox/today/upcoming, search tasks, or inspect projects/areas/tags.",
+          "filePath": "/Users/dedyirawan/.nvm/versions/node/v22.22.0/lib/node_modules/openclaw/skills/things-mac/SKILL.md",
+          "baseDir": "/Users/dedyirawan/.nvm/versions/node/v22.22.0/lib/node_modules/openclaw/skills/things-mac",
+          "source": "openclaw-bundled",
+          "disableModelInvocation": false
+        },
+        {
+          "name": "wacli",
+          "description": "Send WhatsApp messages to other people or search/sync WhatsApp history via the wacli CLI (not for normal user chats).",
+          "filePath": "/Users/dedyirawan/.nvm/versions/node/v22.22.0/lib/node_modules/openclaw/skills/wacli/SKILL.md",
+          "baseDir": "/Users/dedyirawan/.nvm/versions/node/v22.22.0/lib/node_modules/openclaw/skills/wacli",
+          "source": "openclaw-bundled",
+          "disableModelInvocation": false
+        },
+        {
+          "name": "weather",
+          "description": "Get current weather and forecasts (no API key required).",
+          "filePath": "/Users/dedyirawan/.nvm/versions/node/v22.22.0/lib/node_modules/openclaw/skills/weather/SKILL.md",
+          "baseDir": "/Users/dedyirawan/.nvm/versions/node/v22.22.0/lib/node_modules/openclaw/skills/weather",
+          "source": "openclaw-bundled",
+          "disableModelInvocation": false
+        }
+      ],
+      "version": 0
+    },
+    "authProfileOverride": "openai-codex:default",
+    "authProfileOverrideSource": "auto",
+    "authProfileOverrideCompactionCount": 0,
+    "inputTokens": 728,
+    "outputTokens": 533,
+    "totalTokens": 14808,
+    "totalTokensFresh": true,
+    "modelProvider": "openai-codex",
+    "model": "gpt-5.3-codex",
+    "contextTokens": 272000,
+    "systemPromptReport": {
+      "source": "run",
+      "generatedAt": 1771173283440,
+      "sessionId": "c95f3f59-d044-4825-94d2-22547fa45e90",
+      "sessionKey": "agent:main:main",
+      "provider": "openai-codex",
+      "model": "gpt-5.3-codex",
+      "workspaceDir": "/Users/dedyirawan/.openclaw/workspace",
+      "bootstrapMaxChars": 20000,
+      "sandbox": {
+        "mode": "off",
+        "sandboxed": false
+      },
+      "systemPrompt": {
+        "chars": 29826,
+        "projectContextChars": 13279,
+        "nonProjectContextChars": 16547
+      },
+      "injectedWorkspaceFiles": [
+        {
+          "name": "AGENTS.md",
+          "path": "/Users/dedyirawan/.openclaw/workspace/AGENTS.md",
+          "missing": false,
+          "rawChars": 7804,
+          "injectedChars": 7804,
+          "truncated": false
+        },
+        {
+          "name": "SOUL.md",
+          "path": "/Users/dedyirawan/.openclaw/workspace/SOUL.md",
+          "missing": false,
+          "rawChars": 1664,
+          "injectedChars": 1664,
+          "truncated": false
+        },
+        {
+          "name": "TOOLS.md",
+          "path": "/Users/dedyirawan/.openclaw/workspace/TOOLS.md",
+          "missing": false,
+          "rawChars": 850,
+          "injectedChars": 850,
+          "truncated": false
+        },
+        {
+          "name": "IDENTITY.md",
+          "path": "/Users/dedyirawan/.openclaw/workspace/IDENTITY.md",
+          "missing": false,
+          "rawChars": 281,
+          "injectedChars": 281,
+          "truncated": false
+        },
+        {
+          "name": "USER.md",
+          "path": "/Users/dedyirawan/.openclaw/workspace/USER.md",
+          "missing": false,
+          "rawChars": 474,
+          "injectedChars": 474,
+          "truncated": false
+        },
+        {
+          "name": "HEARTBEAT.md",
+          "path": "/Users/dedyirawan/.openclaw/workspace/HEARTBEAT.md",
+          "missing": false,
+          "rawChars": 167,
+          "injectedChars": 167,
+          "truncated": false
+        },
+        {
+          "name": "BOOTSTRAP.md",
+          "path": "/Users/dedyirawan/.openclaw/workspace/BOOTSTRAP.md",
+          "missing": false,
+          "rawChars": 1449,
+          "injectedChars": 1449,
+          "truncated": false
+        }
+      ],
+      "skills": {
+        "promptChars": 7500,
+        "entries": [
+          {
+            "name": "1password",
+            "blockChars": 380
+          },
+          {
+            "name": "apple-notes",
+            "blockChars": 407
+          },
+          {
+            "name": "bear-notes",
+            "blockChars": 256
+          },
+          {
+            "name": "blogwatcher",
+            "blockChars": 275
+          },
+          {
+            "name": "blucli",
+            "blockChars": 256
+          },
+          {
+            "name": "clawhub",
+            "blockChars": 464
+          },
+          {
+            "name": "eightctl",
+            "blockChars": 264
+          },
+          {
+            "name": "gifgrep",
+            "blockChars": 275
+          },
+          {
+            "name": "github",
+            "blockChars": 330
+          },
+          {
+            "name": "gog",
+            "blockChars": 264
+          },
+          {
+            "name": "healthcheck",
+            "blockChars": 523
+          },
+          {
+            "name": "mcporter",
+            "blockChars": 362
+          },
+          {
+            "name": "obsidian",
+            "blockChars": 277
+          },
+          {
+            "name": "openhue",
+            "blockChars": 250
+          },
+          {
+            "name": "oracle",
+            "blockChars": 308
+          },
+          {
+            "name": "ordercli",
+            "blockChars": 280
+          },
+          {
+            "name": "skill-creator",
+            "blockChars": 328
+          },
+          {
+            "name": "songsee",
+            "blockChars": 283
+          },
+          {
+            "name": "sonoscli",
+            "blockChars": 257
+          },
+          {
+            "name": "things-mac",
+            "blockChars": 468
+          },
+          {
+            "name": "wacli",
+            "blockChars": 309
+          },
+          {
+            "name": "weather",
+            "blockChars": 252
+          }
+        ]
+      },
+      "tools": {
+        "listChars": 1926,
+        "schemaChars": 14669,
+        "entries": [
+          {
+            "name": "read",
+            "summaryChars": 298,
+            "schemaChars": 392,
+            "propertiesCount": 4
+          },
+          {
+            "name": "edit",
+            "summaryChars": 129,
+            "schemaChars": 591,
+            "propertiesCount": 6
+          },
+          {
+            "name": "write",
+            "summaryChars": 127,
+            "schemaChars": 313,
+            "propertiesCount": 3
+          },
+          {
+            "name": "exec",
+            "summaryChars": 181,
+            "schemaChars": 1037,
+            "propertiesCount": 12
+          },
+          {
+            "name": "process",
+            "summaryChars": 85,
+            "schemaChars": 844,
+            "propertiesCount": 11
+          },
+          {
+            "name": "browser",
+            "summaryChars": 1251,
+            "schemaChars": 1869,
+            "propertiesCount": 28
+          },
+          {
+            "name": "canvas",
+            "summaryChars": 106,
+            "schemaChars": 661,
+            "propertiesCount": 18
+          },
+          {
+            "name": "nodes",
+            "summaryChars": 101,
+            "schemaChars": 1479,
+            "propertiesCount": 33
+          },
+          {
+            "name": "cron",
+            "summaryChars": 2444,
+            "schemaChars": 581,
+            "propertiesCount": 13
+          },
+          {
+            "name": "message",
+            "summaryChars": 89,
+            "schemaChars": 3897,
+            "propertiesCount": 84
+          },
+          {
+            "name": "tts",
+            "summaryChars": 129,
+            "schemaChars": 223,
+            "propertiesCount": 2
+          },
+          {
+            "name": "gateway",
+            "summaryChars": 354,
+            "schemaChars": 465,
+            "propertiesCount": 11
+          },
+          {
+            "name": "agents_list",
+            "summaryChars": 72,
+            "schemaChars": 33,
+            "propertiesCount": 0
+          },
+          {
+            "name": "sessions_list",
+            "summaryChars": 54,
+            "schemaChars": 176,
+            "propertiesCount": 4
+          },
+          {
+            "name": "sessions_history",
+            "summaryChars": 36,
+            "schemaChars": 149,
+            "propertiesCount": 3
+          },
+          {
+            "name": "sessions_send",
+            "summaryChars": 84,
+            "schemaChars": 203,
+            "propertiesCount": 5
+          },
+          {
+            "name": "sessions_spawn",
+            "summaryChars": 107,
+            "schemaChars": 312,
+            "propertiesCount": 8
+          },
+          {
+            "name": "session_status",
+            "summaryChars": 207,
+            "schemaChars": 89,
+            "propertiesCount": 2
+          },
+          {
+            "name": "web_search",
+            "summaryChars": 175,
+            "schemaChars": 728,
+            "propertiesCount": 6
+          },
+          {
+            "name": "web_fetch",
+            "summaryChars": 129,
+            "schemaChars": 360,
+            "propertiesCount": 3
+          },
+          {
+            "name": "memory_search",
+            "summaryChars": 235,
+            "schemaChars": 139,
+            "propertiesCount": 3
+          },
+          {
+            "name": "memory_get",
+            "summaryChars": 151,
+            "schemaChars": 128,
+            "propertiesCount": 3
+          }
+        ]
+      }
+    },
+    "label": "main"
+  }
+}

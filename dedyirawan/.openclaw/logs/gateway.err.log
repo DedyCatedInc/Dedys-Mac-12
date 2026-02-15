@@ -1,0 +1,6 @@
+2026-02-15T21:42:49.606+07:00 Config overwrite: /Users/dedyirawan/.openclaw/openclaw.json (sha256 99821b7db74f0422a3a5c08798152aa83e5fec3de9cc4de7fa7141b91ef5e773 -> 984add6512d8c767133511fd9e96913e9017fec13e01f0d6d129ad85c71aa6c6, backup=/Users/dedyirawan/.openclaw/openclaw.json.bak)
+2026-02-15T14:42:50.155Z [reload] config change requires gateway restart (update)
+2026-02-15T15:25:57.407Z [agent/embedded] read tool called without path: toolCallId=call_bxa0ksY8sXHCdrzqHEylrOIT|fc_07d8d9f264f48208016991e5853c1c8191a3c9998011a80a24 argsType=object
+2026-02-15T15:34:58.178Z [agent/embedded] embedded run timeout: runId=8d26a089-f636-4e43-91db-eb27ece870f4 sessionId=c95f3f59-d044-4825-94d2-22547fa45e90 timeoutMs=600000
+2026-02-15T15:34:58.266Z [agent/embedded] Profile openai-codex:default timed out (possible rate limit). Trying next account...
+2026-02-15T16:10:42.987Z [agent/embedded] read tool called without path: toolCallId=call_T1AVqOLmAtdiGvb4N2tH2jjf|fc_07d8d9f264f48208016991f002bac481918a947031816ce8f2 argsType=object

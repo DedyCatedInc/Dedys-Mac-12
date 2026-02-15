@@ -1,0 +1,101 @@
+2026-02-15T14:36:47.714Z [canvas] host mounted at http://127.0.0.1:18789/__openclaw__/canvas/ (root /Users/dedyirawan/.openclaw/canvas)
+2026-02-15T14:36:48.774Z [heartbeat] started
+2026-02-15T14:36:48.783Z [gateway] agent model: openai-codex/gpt-5.3-codex
+2026-02-15T14:36:48.787Z [gateway] listening on ws://127.0.0.1:18789 (PID 19771)
+2026-02-15T14:36:48.791Z [gateway] listening on ws://[::1]:18789
+2026-02-15T14:36:48.795Z [gateway] log file: /tmp/openclaw/openclaw-2026-02-15.log
+2026-02-15T14:36:48.810Z [browser/service] Browser control service ready (profiles=2)
+2026-02-15T14:36:51.599Z [gateway] device pairing auto-approved device=af6c1833216fe6107edf8f6ec3bb9909ace6bf9adce5430c030befc633a548e8 role=operator
+2026-02-15T14:36:51.654Z [ws] webchat connected conn=0e2315fd-09f1-4f7c-a4c2-d002377d6717 remote=127.0.0.1 client=openclaw-control-ui webchat vdev
+2026-02-15T14:36:52.030Z [ws] ⇄ res ✓ node.list 217ms conn=0e2315fd…6717 id=110afb21…f966
+2026-02-15T14:36:52.081Z [ws] ⇄ res ✓ device.pair.list 285ms conn=0e2315fd…6717 id=d874bde4…cecd
+2026-02-15T14:36:52.209Z [ws] ⇄ res ✓ chat.history 345ms conn=0e2315fd…6717 id=4fc36b9b…d3b4
+2026-02-15T14:37:26.939Z [ws] webchat disconnected code=1001 reason=n/a conn=0e2315fd-09f1-4f7c-a4c2-d002377d6717
+2026-02-15T14:37:27.366Z [gateway] device pairing auto-approved device=46fb7773f98015707f4925fa87c6a0ad9b88cdd556e8f3d6fa3c55a942f1de4e role=operator
+2026-02-15T14:37:27.462Z [ws] webchat connected conn=456234b7-4e78-4078-bb9b-a584820fff8a remote=127.0.0.1 client=openclaw-control-ui webchat vdev
+2026-02-15T14:37:34.877Z [ws] webchat disconnected code=1001 reason=n/a conn=456234b7-4e78-4078-bb9b-a584820fff8a
+2026-02-15T14:37:59.239Z [gateway] device pairing auto-approved device=9f9267c62e9e17ae6eefa25518534a0417c1e12fc1cb286091d042ec593f0464 role=operator
+2026-02-15T14:37:59.309Z [ws] webchat connected conn=b0cb2307-7a3b-4a23-be82-b359038bb0d5 remote=127.0.0.1 client=openclaw-control-ui webchat vdev
+2026-02-15T14:38:15.959Z [ws] ⇄ res ✓ node.list 91ms conn=b0cb2307…b0d5 id=4f724145…d7a5
+2026-02-15T14:41:35.866Z [ws] ⇄ res ✓ config.get 1083ms conn=b0cb2307…b0d5 id=507ce110…0c13
+2026-02-15T14:42:15.676Z [ws] ⇄ res ✓ config.schema 69ms conn=b0cb2307…b0d5 id=51ef4ea4…6ddb
+2026-02-15T14:42:18.054Z [ws] ⇄ res ✓ config.get 186ms conn=b0cb2307…b0d5 id=e835e59a…1afc
+2026-02-15T14:42:49.633Z [ws] ⇄ res ✓ config.set 185ms conn=b0cb2307…b0d5 id=a29a61a4…bb46
+2026-02-15T14:42:49.729Z [ws] ⇄ res ✓ config.get 89ms conn=b0cb2307…b0d5 id=25a70a6c…bb20
+2026-02-15T14:42:50.150Z [reload] config change detected; evaluating reload (meta.lastTouchedAt, update)
+2026-02-15T14:42:50.177Z [gateway] signal SIGUSR1 received
+2026-02-15T14:42:50.181Z [gateway] received SIGUSR1; restarting
+2026-02-15T14:42:50.191Z [gmail-watcher] gmail watcher stopped
+2026-02-15T14:42:51.524Z [ws] webchat disconnected code=1012 reason=service restart conn=b0cb2307-7a3b-4a23-be82-b359038bb0d5
+2026-02-15T14:42:51.543Z [canvas] host mounted at http://127.0.0.1:18789/__openclaw__/canvas/ (root /Users/dedyirawan/.openclaw/canvas)
+2026-02-15T14:42:51.570Z [heartbeat] started
+2026-02-15T14:42:51.579Z [gateway] agent model: openai-codex/gpt-5.3-codex
+2026-02-15T14:42:51.585Z [gateway] listening on ws://127.0.0.1:18789 (PID 19771)
+2026-02-15T14:42:51.591Z [gateway] listening on ws://[::1]:18789
+2026-02-15T14:42:51.599Z [gateway] log file: /tmp/openclaw/openclaw-2026-02-15.log
+2026-02-15T14:42:51.609Z [browser/service] Browser control service ready (profiles=2)
+2026-02-15T14:42:52.360Z [ws] webchat connected conn=108f4e30-ff7e-4669-9463-b17093c6bad6 remote=127.0.0.1 client=openclaw-control-ui webchat vdev
+2026-02-15T14:42:52.442Z [ws] ⇄ res ✓ config.schema 64ms conn=108f4e30…bad6 id=30bbeb7c…2454
+2026-02-15T14:42:52.464Z [ws] ⇄ res ✓ node.list 84ms conn=108f4e30…bad6 id=f785824b…fef9
+2026-02-15T14:42:52.481Z [ws] ⇄ res ✓ device.pair.list 105ms conn=108f4e30…bad6 id=dcdffe10…1345
+2026-02-15T14:42:56.335Z [ws] ⇄ res ✓ config.get 67ms conn=108f4e30…bad6 id=d4ac3399…7fef
+2026-02-15T15:10:30.775Z [ws] webchat disconnected code=1001 reason=n/a conn=108f4e30-ff7e-4669-9463-b17093c6bad6
+2026-02-15T15:14:30.962Z [ws] webchat connected conn=17012d89-9a8a-4a1c-8f58-64fb5d51265c remote=127.0.0.1 client=openclaw-control-ui webchat vdev
+2026-02-15T15:14:31.407Z [ws] ⇄ res ✓ agent.identity.get 62ms conn=17012d89…265c id=9e1e02fe…9241
+2026-02-15T15:14:31.540Z [ws] ⇄ res ✓ node.list 82ms conn=17012d89…265c id=aad635a1…ed3c
+2026-02-15T15:14:31.550Z [ws] ⇄ res ✓ device.pair.list 90ms conn=17012d89…265c id=a68c431e…e6a4
+2026-02-15T15:15:19.957Z [ws] ⇄ res ✓ chat.send 102ms runId=0eb70145-9276-48b1-86eb-360413e72c37 conn=17012d89…265c id=48c27e53…6b10
+2026-02-15T15:25:35.049Z [ws] ⇄ res ✓ node.list 52ms conn=17012d89…265c id=160d4527…8aa7
+2026-02-15T15:26:38.580Z [ws] ⇄ res ✓ config.get 73ms conn=17012d89…265c id=303cae5c…4a01
+2026-02-15T15:26:49.253Z [ws] ⇄ res ✓ config.get 109ms conn=17012d89…265c id=9c2b1443…6eb5
+2026-02-15T15:27:20.405Z [ws] ⇄ res ✓ config.schema 136ms conn=17012d89…265c id=d05ffc96…97af
+2026-02-15T15:27:20.764Z [ws] ⇄ res ✓ config.get 336ms conn=17012d89…265c id=3b97da91…0906
+2026-02-15T15:27:32.306Z [ws] ⇄ res ✓ chat.history 60ms conn=17012d89…265c id=b5591970…5457
+2026-02-15T15:28:45.276Z [ws] ⇄ res ✓ node.list 57ms conn=17012d89…265c id=74456e7e…d2f4
+2026-02-15T15:37:19.233Z [ws] ⇄ res ✓ node.list 89ms conn=17012d89…265c id=c7d008f3…2a64
+2026-02-15T15:45:25.111Z [ws] ⇄ res ✓ node.list 78ms conn=17012d89…265c id=0297f5d7…32e5
+2026-02-15T15:47:00.052Z [ws] ⇄ res ✓ node.list 50ms conn=17012d89…265c id=be08b43b…2657
+2026-02-15T15:49:40.139Z [ws] ⇄ res ✓ node.list 110ms conn=17012d89…265c id=d5a8834c…73ad
+2026-02-15T15:51:26.992Z [ws] ⇄ res ✓ system-presence 71ms conn=17012d89…265c id=c7f5d7c8…afbb
+2026-02-15T15:51:29.556Z [ws] ⇄ res ✓ chat.history 75ms conn=17012d89…265c id=2368ae7c…1180
+2026-02-15T16:09:40.827Z [ws] webchat disconnected code=1001 reason=n/a conn=17012d89-9a8a-4a1c-8f58-64fb5d51265c
+2026-02-15T16:09:41.535Z [ws] webchat connected conn=a15f1f31-962f-400f-a33b-05ea86275fc2 remote=127.0.0.1 client=openclaw-control-ui webchat vdev
+2026-02-15T16:09:41.778Z [ws] ⇄ res ✓ chat.history 74ms conn=a15f1f31…5fc2 id=6e03aff2…dfa3
+2026-02-15T16:09:41.830Z [ws] ⇄ res ✓ node.list 97ms conn=a15f1f31…5fc2 id=e079218f…d2e8
+2026-02-15T16:09:41.852Z [ws] ⇄ res ✓ device.pair.list 154ms conn=a15f1f31…5fc2 id=b9ed841d…5732
+2026-02-15T16:10:31.480Z [ws] ⇄ res ✓ node.list 103ms conn=a15f1f31…5fc2 id=2f64f55e…4091
+2026-02-15T16:14:43.084Z [ws] ⇄ res ✓ config.schema 63ms conn=a15f1f31…5fc2 id=402e25bb…d245
+2026-02-15T16:14:43.219Z [ws] ⇄ res ✓ config.get 131ms conn=a15f1f31…5fc2 id=d2f18dc5…699c
+2026-02-15T16:14:54.487Z [ws] ⇄ res ✓ chat.history 68ms conn=a15f1f31…5fc2 id=38d03d2c…44fb
+2026-02-15T16:15:12.223Z [ws] ⇄ res ✓ config.get 144ms conn=a15f1f31…5fc2 id=1bdab9b1…953f
+2026-02-15T16:15:14.912Z [ws] ⇄ res ✓ skills.status 757ms conn=a15f1f31…5fc2 id=292dc4a4…cae4
+2026-02-15T16:15:49.132Z [ws] ⇄ res ✓ chat.history 90ms conn=a15f1f31…5fc2 id=ff163795…30dc
+2026-02-15T16:16:44.860Z [ws] ⇄ res ✓ cron.status 101ms conn=a15f1f31…5fc2 id=9f085210…5953
+2026-02-15T16:16:45.615Z [ws] ⇄ res ✓ chat.history 150ms conn=a15f1f31…5fc2 id=0768929e…d4d9
+2026-02-15T16:16:46.596Z [ws] ⇄ res ✓ chat.history 170ms conn=a15f1f31…5fc2 id=f40120b9…b5b2
+2026-02-15T16:17:00.011Z [ws] webchat disconnected code=1001 reason=n/a conn=a15f1f31-962f-400f-a33b-05ea86275fc2
+2026-02-15T16:17:00.704Z [ws] webchat connected conn=8b9656e3-0d5e-40ab-91e8-b7fbc52a15a9 remote=127.0.0.1 client=openclaw-control-ui webchat vdev
+2026-02-15T16:17:01.085Z [ws] ⇄ res ✓ chat.history 189ms conn=8b9656e3…15a9 id=56248d7e…633a
+2026-02-15T16:17:01.196Z [ws] ⇄ res ✓ node.list 255ms conn=8b9656e3…15a9 id=a3c3538b…8bbb
+2026-02-15T16:17:01.223Z [ws] ⇄ res ✓ device.pair.list 322ms conn=8b9656e3…15a9 id=78b3e045…8f92
+2026-02-15T16:17:44.620Z [ws] webchat disconnected code=1001 reason=n/a conn=8b9656e3-0d5e-40ab-91e8-b7fbc52a15a9
+2026-02-15T16:17:44.831Z [ws] webchat connected conn=7402ba70-f122-46c0-bdb1-6e1f0adc2301 remote=127.0.0.1 client=openclaw-control-ui webchat vdev
+2026-02-15T16:17:44.991Z [ws] ⇄ res ✓ chat.history 95ms conn=7402ba70…2301 id=1edf8708…265b
+2026-02-15T16:17:45.053Z [ws] ⇄ res ✓ node.list 119ms conn=7402ba70…2301 id=2b42750b…0b6a
+2026-02-15T16:17:45.090Z [ws] ⇄ res ✓ device.pair.list 173ms conn=7402ba70…2301 id=7cbd8692…ea9d
+2026-02-15T16:18:41.659Z [ws] webchat disconnected code=1001 reason=n/a conn=7402ba70-f122-46c0-bdb1-6e1f0adc2301
+2026-02-15T16:18:42.260Z [ws] webchat connected conn=d3a07b2b-16e0-4a31-b67e-a9aa52b27a9e remote=127.0.0.1 client=openclaw-control-ui webchat vdev
+2026-02-15T16:18:42.382Z [ws] ⇄ res ✓ chat.history 84ms conn=d3a07b2b…7a9e id=4faaeec4…c24a
+2026-02-15T16:18:42.418Z [ws] ⇄ res ✓ node.list 104ms conn=d3a07b2b…7a9e id=7092c764…4d4f
+2026-02-15T16:18:42.446Z [ws] ⇄ res ✓ device.pair.list 136ms conn=d3a07b2b…7a9e id=7a66b798…3d0d
+2026-02-15T16:18:56.657Z [ws] ⇄ res ✓ chat.history 89ms conn=d3a07b2b…7a9e id=d6725c0b…a00e
+2026-02-15T16:22:44.448Z [ws] ⇄ res ✓ chat.history 91ms conn=d3a07b2b…7a9e id=dad4f9cd…74ff
+2026-02-15T16:35:09.167Z [ws] ⇄ res ✓ chat.history 114ms conn=d3a07b2b…7a9e id=510ffcaa…c3ad
+2026-02-15T16:40:12.408Z [ws] webchat disconnected code=1001 reason=n/a conn=d3a07b2b-16e0-4a31-b67e-a9aa52b27a9e
+2026-02-15T16:40:13.166Z [ws] webchat connected conn=fa7d9467-50b7-446c-b35b-69f9de83388b remote=127.0.0.1 client=openclaw-control-ui webchat vdev
+2026-02-15T16:40:13.644Z [ws] ⇄ res ✓ chat.history 96ms conn=fa7d9467…388b id=7479f330…bda5
+2026-02-15T16:40:13.703Z [ws] ⇄ res ✓ node.list 133ms conn=fa7d9467…388b id=7da5f9e0…7a5d
+2026-02-15T16:40:13.712Z [ws] ⇄ res ✓ device.pair.list 185ms conn=fa7d9467…388b id=dad7d486…4cdd
+2026-02-15T16:41:47.997Z [ws] ⇄ res ✓ node.list 213ms conn=fa7d9467…388b id=07c1cea9…b411
+2026-02-15T16:42:28.681Z [ws] ⇄ res ✓ node.list 132ms conn=fa7d9467…388b id=489a7534…89f6
+2026-02-15T16:42:33.284Z [ws] ⇄ res ✓ node.list 85ms conn=fa7d9467…388b id=dbbba816…4a90
