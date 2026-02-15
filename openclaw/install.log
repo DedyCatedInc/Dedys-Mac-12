@@ -1,0 +1,747 @@
+dedyirawan@Dedys-Mac-12 Dedys-Mac-12 % ./openclaw/install.sh 
+
+Base Directory and Filename...
+[/Users/dedyirawan/sources/github.com/DedyCatedInc/Dedys-Mac-12/openclaw] [openclaw] [install.sh] [install]
+.......
+/Users/dedyirawan/.zshrc: line 7: autoload: command not found
+/Users/dedyirawan/.zshrc: line 8: compinit: command not found
+Downloading and installing node v22.22.0...
+Downloading https://nodejs.org/dist/v22.22.0/node-v22.22.0-darwin-x64.tar.xz...
+################################################################################################################################################################################################################################# 100.0%
+Computing checksum with sha256sum
+Checksums matched!
+Now using node v22.22.0 (npm v10.9.4)
+Creating default alias: default -> v22 (-> v22.22.0 *)
+Now using node v22.22.0 (npm v10.9.4)
+╭───────────────────────────────────────────────────────────────────────────────────╮
+│                                                                                   │
+│  🦞 OpenClaw Installer                                                            │
+│  If you can describe it, I can probably automate it—or at least make it funnier.  │
+│  modern installer mode                                                            │
+│                                                                                   │
+╰───────────────────────────────────────────────────────────────────────────────────╯
+
+✓ gum bootstrapped (temp, verified, v0.17.0)
+✓ Detected: macos
+            
+Install plan
+            
+OS                  macos
+Install method      npm
+Requested version   latest
+                           
+[1/3] Preparing environment
+                           
+✓ Homebrew already installed
+✓ Node.js v22.22.0 found
+                         
+[2/3] Installing OpenClaw
+                         
+✓ Git already installed
+INFO Installing OpenClaw v2026.2.14
+✓ OpenClaw npm package installed
+✓ OpenClaw installed
+                      
+[3/3] Finalizing setup
+                      
+
+🦞 OpenClaw installed successfully (2026.2.14)!
+All done! I promise to only judge your code a little bit.
+
+INFO Starting setup
+
+
+🦞 OpenClaw 2026.2.14 (c1feda1) — OpenAI-compatible, not OpenAI-dependent.
+
+▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄
+██░▄▄▄░██░▄▄░██░▄▄▄██░▀██░██░▄▄▀██░████░▄▄▀██░███░██
+██░███░██░▀▀░██░▄▄▄██░█░█░██░█████░████░▀▀░██░█░█░██
+██░▀▀▀░██░█████░▀▀▀██░██▄░██░▀▀▄██░▀▀░█░██░██▄▀▄▀▄██
+▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀
+                  🦞 OPENCLAW 🦞                    
+ 
+┌  OpenClaw onboarding
+│
+◇  Security ──────────────────────────────────────────────────────────────────────────────╮
+│                                                                                         │
+│  Security warning — please read.                                                        │
+│                                                                                         │
+│  OpenClaw is a hobby project and still in beta. Expect sharp edges.                     │
+│  This bot can read files and run actions if tools are enabled.                          │
+│  A bad prompt can trick it into doing unsafe things.                                    │
+│                                                                                         │
+│  If you’re not comfortable with basic security and access control, don’t run OpenClaw.  │
+│  Ask someone experienced to help before enabling tools or exposing it to the internet.  │
+│                                                                                         │
+│  Recommended baseline:                                                                  │
+│  - Pairing/allowlists + mention gating.                                                 │
+│  - Sandbox + least-privilege tools.                                                     │
+│  - Keep secrets out of the agent’s reachable filesystem.                                │
+│  - Use the strongest available model for any bot with tools or untrusted inboxes.       │
+│                                                                                         │
+│  Run regularly:                                                                         │
+│  openclaw security audit --deep                                                         │
+│  openclaw security audit --fix                                                          │
+│                                                                                         │
+│  Must read: https://docs.openclaw.ai/gateway/security                                   │
+│                                                                                         │
+├─────────────────────────────────────────────────────────────────────────────────────────╯
+│
+◇  I understand this is powerful and inherently risky. Continue?
+│  Yes
+│
+◇  Onboarding mode
+│  QuickStart
+│
+◇  QuickStart ─────────────────────────╮
+│                                      │
+│  Gateway port: 18789                 │
+│  Gateway bind: Loopback (127.0.0.1)  │
+│  Gateway auth: Token (default)       │
+│  Tailscale exposure: Off             │
+│  Direct to chat channels.            │
+│                                      │
+├──────────────────────────────────────╯
+│
+◇  Model/auth provider
+│  OpenAI
+│
+◇  OpenAI auth method
+│  OpenAI Codex (ChatGPT OAuth)
+│
+◇  OpenAI Codex OAuth ─────────────────────────────────────────────╮
+│                                                                  │
+│  Browser will open for OpenAI authentication.                    │
+│  If the callback doesn't auto-complete, paste the redirect URL.  │
+│  OpenAI OAuth uses localhost:1455 for the callback.              │
+│                                                                  │
+├──────────────────────────────────────────────────────────────────╯
+│
+Open: https://auth.openai.com/oauth/authorize?response_type=code&client_id=app_EMoamEEZ73f0CkXaXp7hrann&redirect_uri=http%3A%2F%2Flocalhost%3A1455%2Fauth%2Fcallback&scope=openid+profile+email+offline_access&code_challenge=z-mUaDh-oIMS68KwYpNZ8Px7yd6QcfoqhEAiPJrbgms&code_challenge_method=S256&state=5fdf5c55eae5465ca52d3fe62e51f5ea&id_token_add_organizations=true&codex_cli_simplified_flow=true&originator=pi
+◇  OpenAI OAuth complete
+│
+◇  Model configured ────────────────────────────────╮
+│                                                   │
+│  Default model set to openai-codex/gpt-5.3-codex  │
+│                                                   │
+├───────────────────────────────────────────────────╯
+│
+◇  Default model
+│  Keep current (openai-codex/gpt-5.3-codex)
+│
+◇  Channel status ────────────────────────────╮
+│                                             │
+│  Telegram: not configured                   │
+│  WhatsApp: not configured                   │
+│  Discord: not configured                    │
+│  IRC: not configured                        │
+│  Google Chat: not configured                │
+│  Slack: not configured                      │
+│  Signal: not configured                     │
+│  iMessage: not configured                   │
+│  Feishu: install plugin to enable           │
+│  Google Chat: install plugin to enable      │
+│  Nostr: install plugin to enable            │
+│  Microsoft Teams: install plugin to enable  │
+│  Mattermost: install plugin to enable       │
+│  Nextcloud Talk: install plugin to enable   │
+│  Matrix: install plugin to enable           │
+│  BlueBubbles: install plugin to enable      │
+│  LINE: install plugin to enable             │
+│  Zalo: install plugin to enable             │
+│  Zalo Personal: install plugin to enable    │
+│  Tlon: install plugin to enable             │
+│                                             │
+├─────────────────────────────────────────────╯
+│
+◇  How channels work ─────────────────────────────────────────────────────────────────────╮
+│                                                                                         │
+│  DM security: default is pairing; unknown DMs get a pairing code.                       │
+│  Approve with: openclaw pairing approve <channel> <code>                                │
+│  Public DMs require dmPolicy="open" + allowFrom=["*"].                                  │
+│  Multi-user DMs: run: openclaw config set session.dmScope "per-channel-peer" (or        │
+│  "per-account-channel-peer" for multi-account channels) to isolate sessions.            │
+│  Docs: start/pairing                  │
+│                                                                                         │
+│  Telegram: simplest way to get started — register a bot with @BotFather and get going.  │
+│  WhatsApp: works with your own number; recommend a separate phone + eSIM.               │
+│  Discord: very well supported right now.                                                │
+│  IRC: classic IRC networks with DM/channel routing and pairing controls.                │
+│  Google Chat: Google Workspace Chat app with HTTP webhook.                              │
+│  Slack: supported (Socket Mode).                                                        │
+│  Signal: signal-cli linked device; more setup (David Reagans: "Hop on Discord.").       │
+│  iMessage: this is still a work in progress.                                            │
+│  Feishu: 飞书/Lark enterprise messaging with doc/wiki/drive tools.                      │
+│  Nostr: Decentralized protocol; encrypted DMs via NIP-04.                               │
+│  Microsoft Teams: Bot Framework; enterprise support.                                    │
+│  Mattermost: self-hosted Slack-style chat; install the plugin to enable.                │
+│  Nextcloud Talk: Self-hosted chat via Nextcloud Talk webhook bots.                      │
+│  Matrix: open protocol; install the plugin to enable.                                   │
+│  BlueBubbles: iMessage via the BlueBubbles mac app + REST API.                          │
+│  LINE: LINE Messaging API bot for Japan/Taiwan/Thailand markets.                        │
+│  Zalo: Vietnam-focused messaging platform with Bot API.                                 │
+│  Zalo Personal: Zalo personal account via QR code login.                                │
+│  Tlon: decentralized messaging on Urbit; install the plugin to enable.                  │
+│                                                                                         │
+├─────────────────────────────────────────────────────────────────────────────────────────╯
+│
+◇  Select channel (QuickStart)
+│  Skip for now
+Updated ~/.openclaw/openclaw.json
+Workspace OK: ~/.openclaw/workspace
+Sessions OK: ~/.openclaw/agents/main/sessions
+│
+◇  Skills status ─────────────╮
+│                             │
+│  Eligible: 3                │
+│  Missing requirements: 46   │
+│  Unsupported on this OS: 0  │
+│  Blocked by allowlist: 0    │
+│                             │
+├─────────────────────────────╯
+│
+◇  Configure skills now? (recommended)
+│  Yes
+│
+◇  Install missing skill dependencies
+│  🔐 1password, 📝 apple-notes, ⏰ apple-reminders, 🐻 bear-notes, 📰 blogwatcher, 🫐 blucli, 📸 camsnap, 🧩 clawhub, 🎛️ eightctl, ♊️ gemini, 🧲 gifgrep, 🐙 github, 🎮 gog, 📍 goplaces, 📧 himalaya, 📨 imsg, 📦 mcporter, 
+│  📊 model-usage, 🍌 nano-banana-pro, 📄 nano-pdf, 💎 obsidian, 🎙️ openai-whisper, 💡 openhue, 🧿 oracle, 🛵 ordercli, 👀 peekaboo, 🗣️ sag, 🌊 songsee, 🔊 sonoscli, 🧾 summarize, ✅ things-mac, 🎞️ video-frames, 📱 wacli
+│
+◇  Preferred node manager for skill installs
+│  npm
+│
+◇  Installed 1password
+│
+◇  Installed apple-notes
+│
+◇  Install failed: apple-reminders (exit 1) — Error: remindctl: An unsatisfied requirement failed this build.
+==> Tapping steipete/tap
+Cloning into '/usr/local/Homebrew/Library/Taps/steipete/homebrew-tap'...
+Tapped 3 casks and 20 formulae (37 files, 161.9KB).
+Warning: You are using macOS 12.
+We (and Apple) do not provide support for this old version.
+You may have better luck with MacPorts which supports older versions of macOS:
+  https://www.macports.org
+
+This is a Tier 3 configuration:
+  https://docs.brew.sh/Support-Tiers#tier-3
+You can report Tier 3 unrelated issues to Homebrew/* repositories!
+Read the above document before opening any issues or PRs.
+
+remindctl: This software does not run on macOS versions older than Sonoma.
+Error: remindctl: An unsatisfied requirement failed this build.
+Tip: run `openclaw doctor` to review skills + requirements.
+Docs: https://docs.openclaw.ai/skills
+│
+◇  Installed bear-notes
+│
+◇  Installed blogwatcher
+│
+◇  Installed blucli
+│
+◇  Install failed: camsnap (exit 1) — Error: camsnap: An unsatisfied requirement failed this build.
+Warning: You are using macOS 12.
+We (and Apple) do not provide support for this old version.
+You may have better luck with MacPorts which supports older versions of macOS:
+  https://www.macports.org
+
+This is a Tier 3 configuration:
+  https://docs.brew.sh/Support-Tiers#tier-3
+You can report Tier 3 unrelated issues to Homebrew/* repositories!
+Read the above document before opening any issues or PRs.
+
+camsnap: The arm64 architecture is required for this software.
+Error: camsnap: An unsatisfied requirement failed this build.
+Tip: run `openclaw doctor` to review skills + requirements.
+Docs: https://docs.openclaw.ai/skills
+│
+◇  Installed clawhub
+│
+◇  Installed eightctl
+│
+◇  Install failed: gemini (exit 1) — Error: An exception occurred within a child process:
+Warning: You are using macOS 12.
+We (and Apple) do not provide support for this old version.
+You may have better luck with MacPorts which supports older versions of macOS:
+  https://www.macports.org
+
+This is a Tier 3 configuration:
+  https://docs.brew.sh/Support-Tiers#tier-3
+You can report Tier 3 unrelated issues to Homebrew/* repositories!
+Read the above document before opening any issues or PRs.
+
+✔︎ API Source gemini-cli.rb
+✔︎ Bottle Manifest cxxopts (3.3.1)
+✔︎ Bottle cxxopts (3.3.1)
+✔︎ API Source ada-url.rb
+✔︎ Formula ada-url (3.4.2)
+✔︎ API Source hdrhistogram_c.rb
+✔︎ Formula hdrhistogram_c (0.11.9)
+✔︎ API Source llhttp.rb
+✔︎ Formula llhttp (9.3.1)
+✔︎ API Source uvwasi.rb
+✔︎ Patch fcc0be004867939389aba3cc715ea90b86ab869c.patch?full_index=1
+✔︎ Formula uvwasi (0.0.23)
+✔︎ API Source node.rb
+✔︎ Resource node--npm
+✔︎ Formula gemini-cli (0.28.2)
+✔︎ Formula node (25.6.1)
+Error: An exception occurred within a child process:
+  FormulaUnavailableError: No available formula with the name "formula.jws.json".
+Tip: run `openclaw doctor` to review skills + requirements.
+Docs: https://docs.openclaw.ai/skills
+│
+◇  Installed gifgrep
+│
+◇  Installed github
+│
+◇  Installed gog
+│
+◇  Installed goplaces
+│
+◇  Install failed: himalaya — ✔︎ Resource rust--rustc-bootstrap
+Warning: You are using macOS 12.
+We (and Apple) do not provide support for this old version.
+You may have better luck with MacPorts which supports older versions of macOS:
+  https://www.macports.org
+
+This is a Tier 3 configuration:
+  https://docs.brew.sh/Support-Tiers#tier-3
+You can report Tier 3 unrelated issues to Homebrew/* repositories!
+Read the above document before opening any issues or PRs.
+
+✔︎ API Source himalaya.rb
+✔︎ API Source libgit2.rb
+✔︎ Formula libgit2 (1.9.2)
+✔︎ API Source z3.rb
+✔︎ Formula z3 (4.15.4)
+✔︎ API Source llvm.rb
+✔︎ Patch 1381ad497b9a6d3da630cbef53cbfa9ddf117bb6...40a8c7c0ff3f688b690e4c74db734de67f0f89e9.diff
+✔︎ API Source rust.rb
+✔︎ Resource rust--cargo
+✔︎ Patch ea70e7c123fd8b30e5b36ab62bfcfafa63779797.patch?full_index=1
+✔︎ Formula himalaya (1.1.0)
+✔︎ Resource rust--cargo-bootstrap
+✔︎ Formula llvm (21.1.8)
+✔︎ Resource rust--rust-std-bootstrap
+✔︎ Resource rust--rustc-bootstrap
+Tip: run `openclaw doctor` to review skills + requirements.
+Docs: https://docs.openclaw.ai/skills
+│
+◇  Install failed: imsg (exit 1) — Error: imsg: An unsatisfied requirement failed this build.
+==> Auto-updating Homebrew...
+Adjust how often this is run with `$HOMEBREW_AUTO_UPDATE_SECS` or disable with
+`$HOMEBREW_NO_AUTO_UPDATE=1`. Hide these hints with `$HOMEBREW_NO_ENV_HINTS=1` (see `man brew`).
+Warning: You are using macOS 12.
+We (and Apple) do not provide support for this old version.
+You may have better luck with MacPorts which supports older versions of macOS:
+  https://www.macports.org
+
+This is a Tier 3 configuration:
+  https://docs.brew.sh/Support-Tiers#tier-3
+You can report Tier 3 unrelated issues to Homebrew/* repositories!
+Read the above document before opening any issues or PRs.
+
+imsg: This software does not run on macOS versions older than Sonoma.
+Error: imsg: An unsatisfied requirement failed this build.
+Tip: run `openclaw doctor` to review skills + requirements.
+Docs: https://docs.openclaw.ai/skills
+│
+◇  Installed mcporter
+│
+◇  Install failed: model-usage — missing brew formula
+Tip: run `openclaw doctor` to review skills + requirements.
+Docs: https://docs.openclaw.ai/skills
+│
+◇  Install failed: nano-banana-pro — ✔︎ Formula uv (0.10.2)
+Warning: You are using macOS 12.
+We (and Apple) do not provide support for this old version.
+You may have better luck with MacPorts which supports older versions of macOS:
+  https://www.macports.org
+
+This is a Tier 3 configuration:
+  https://docs.brew.sh/Support-Tiers#tier-3
+You can report Tier 3 unrelated issues to Homebrew/* repositories!
+Read the above document before opening any issues or PRs.
+
+✔︎ API Source uv.rb
+✔︎ API Source libgit2.rb
+✔︎ Formula libgit2 (1.9.2)
+✔︎ API Source z3.rb
+✔︎ Formula z3 (4.15.4)
+✔︎ API Source llvm.rb
+✔︎ Patch 1381ad497b9a6d3da630cbef53cbfa9ddf117bb6...40a8c7c0ff3f688b690e4c74db734de67f0f89e9.diff
+✔︎ API Source rust.rb
+✔︎ Resource rust--cargo
+✔︎ Resource rust--rustc-bootstrap
+✔︎ Resource rust--cargo-bootstrap
+✔︎ Resource rust--rust-std-bootstrap
+✔︎ Formula llvm (21.1.8)
+✔︎ Formula uv (0.10.2)
+Tip: run `openclaw doctor` to review skills + requirements.
+Docs: https://docs.openclaw.ai/skills
+│
+◇  Install failed: nano-pdf — Failed to install uv (brew)
+                                                         Warning: You are using macOS 12.
+We (and Apple) do not provide support for this old version.
+You may have better luck with MacPorts which supports older versions of macOS:
+  https://www.macports.org
+
+This is a Tier 3 configuration:
+  https://docs.brew.sh/Support-Tiers#tier-3
+You can report Tier 3 unrelated issues to Homebrew/* repositories!
+Read the above document before opening any issues or PRs.
+
+✔︎ API Source uv.rb
+✔︎ API Source libgit2.rb
+✔︎ API Source z3.rb
+✔︎ API Source llvm.rb
+✔︎ API Source rust.rb
+✔︎ Resource rust--cargo-bootstrap
+✔︎ Resource rust--rust-std-bootstrap
+✔︎ Formula libgit2 (1.9.2)
+✔︎ Formula z3 (4.15.4)
+✔︎ Resource rust--cargo
+✔︎ Resource rust--rustc-bootstrap
+✔︎ Patch 1381ad497b9a6d3da630cbef53cbfa9ddf117bb6...40a8c7c0ff3f688b690e4c74db734de67f0f89e9.diff
+✔︎ Formula uv (0.10.2)
+✔︎ Formula llvm (21.1.8)
+✔︎ Formula rust (1.93.1)
+Tip: run `openclaw doctor` to review skills + requirements.
+Docs: https://docs.openclaw.ai/skills
+│
+◇  Installed obsidian
+│
+◇  Install failed: openai-whisper — ✔︎ Formula gcc (15.2.0)
+Warning: You are using macOS 12.
+We (and Apple) do not provide support for this old version.
+You may have better luck with MacPorts which supports older versions of macOS:
+  https://www.macports.org
+
+This is a Tier 3 configuration:
+  https://docs.brew.sh/Support-Tiers#tier-3
+You can report Tier 3 unrelated issues to Homebrew/* repositories!
+Read the above document before opening any issues or PRs.
+
+✔︎ API Source openai-whisper.rb
+✔︎ API Source dav1d.rb
+✔︎ Formula dav1d (1.5.3)
+✔︎ Bottle Manifest lame (3.100)
+✔︎ Bottle lame (3.100)
+✔︎ Bottle Manifest yasm (1.3.0_2)
+✔︎ Bottle yasm (1.3.0_2)
+✔︎ API Source libvpx.rb
+✔︎ Formula libvpx (1.15.2)
+✔︎ API Source opus.rb
+✔︎ Formula opus (1.6.1)
+✔︎ API Source sdl2.rb
+✔︎ Formula sdl2 (2.32.10)
+✔︎ API Source svt-av1.rb
+✔︎ Formula svt-av1 (4.0.1)
+✔︎ API Source x264.rb
+✔︎ Formula x264 (r3222)
+✔︎ API Source x265.rb
+✔︎ Patch b354c009a60bcd6d7fc04014e200a1ee9c45c167
+✔︎ Patch 51ae8e922bcc4586ad4710812072289af91492a8
+✔︎ Formula x265 (4.1)
+✔︎ API Source ffmpeg.rb
+✔︎ Patch add-av_stream_get_first_dts-for-chromium.patch
+✔︎ Patch a5d4c398b411a00ac09d8fe3b66117222323844c
+✔︎ Formula ffmpeg (8.0.1)
+✔︎ API Source googletest.rb
+✔︎ Formula googletest (1.17.0)
+✔︎ API Source abseil.rb
+✔︎ Formula abseil (20260107.1)
+✔︎ Bottle Manifest eigen (5.0.1)
+✔︎ Bottle eigen (5.0.1)
+✔︎ Bottle Manifest isl (0.27)
+✔︎ Bottle isl (0.27)
+✔︎ API Source mpfr.rb
+✔︎ Formula mpfr (4.2.2)
+✔︎ Bottle Manifest libmpc (1.3.1)
+✔︎ Bottle libmpc (1.3.1)
+✔︎ Bottle Manifest make (4.4.1)
+✔︎ Bottle make (4.4.1)
+✔︎ API Source gcc.rb
+✔︎ Patch gcc-15.1.0.diff
+✔︎ Bottle Manifest lit (18.1.8)
+✔︎ Bottle lit (18.1.8)
+✔︎ API Source libomp.rb
+✔︎ Resource libomp--cmake
+✔︎ Formula libomp (21.1.8)
+✔︎ API Source openblas.rb
+✔︎ Patch c077708852c7262b6bc0da6bc094b447e7ba7b3c.patch?full_index=1
+✔︎ Formula openblas (0.3.31)
+✔︎ API Source numpy.rb
+✔︎ Formula numpy (2.4.2)
+✔︎ API Source protobuf.rb
+✔︎ Formula protobuf (33.4)
+✔︎ Bottle Manifest pybind11 (3.0.1_1)
+✔︎ Bottle pybind11 (3.0.1_1)
+✔︎ API Source sleef.rb
+✔︎ Formula sleef (3.9.0)
+✔︎ API Source pytorch.rb
+✔︎ Resource pytorch--filelock
+✔︎ Resource pytorch--fsspec
+✔︎ Resource pytorch--jinja2
+✔︎ Resource pytorch--markupsafe
+✔︎ Resource pytorch--mpmath
+✔︎ Resource pytorch--networkx
+✔︎ Resource pytorch--opt-einsum
+✔︎ Resource pytorch--packaging
+✔︎ Resource pytorch--pyyaml
+✔︎ Resource pytorch--setuptools
+✔︎ Resource pytorch--sympy
+✔︎ Resource pytorch--typing-extensions
+✔︎ API Source libgit2.rb
+✔︎ Formula libgit2 (1.9.2)
+✔︎ API Source z3.rb
+✔︎ Formula z3 (4.15.4)
+✔︎ API Source llvm.rb
+✔︎ Patch 1381ad497b9a6d3da630cbef53cbfa9ddf117bb6...40a8c7c0ff3f688b690e4c74db734de67f0f89e9.diff
+✔︎ Formula llvm (21.1.8)
+✔︎ API Source rust.rb
+✔︎ Resource rust--cargo
+✔︎ Resource rust--rustc-bootstrap
+✔︎ Resource rust--cargo-bootstrap
+✔︎ Resource rust--rust-std-bootstrap
+✔︎ Formula rust (1.93.1)
+✔︎ Resource openai-whisper--charset-normalizer
+✔︎ Resource openai-whisper--idna
+✔︎ Resource openai-whisper--llvmlite
+✔︎ Resource openai-whisper--more-itertools
+✔︎ Resource openai-whisper--numba
+✔︎ Resource openai-whisper--regex
+✔︎ Resource openai-whisper--requests
+✔︎ Resource openai-whisper--tiktoken
+✔︎ Resource openai-whisper--tqdm
+✔︎ Resource openai-whisper--urllib3
+✔︎ Formula openai-whisper (20250625)
+✔︎ Resource openai-whisper--numpy
+✔︎ Formula gcc (15.2.0)
+Tip: run `openclaw doctor` to review skills + requirements.
+Docs: https://docs.openclaw.ai/skills
+│
+◇  Installed openhue
+│
+◇  Installed oracle
+│
+◇  Installed ordercli
+│
+◇  Install failed: peekaboo (exit 1) — Error: peekaboo: An unsatisfied requirement failed this build.
+Warning: You are using macOS 12.
+We (and Apple) do not provide support for this old version.
+You may have better luck with MacPorts which supports older versions of macOS:
+  https://www.macports.org
+
+This is a Tier 3 configuration:
+  https://docs.brew.sh/Support-Tiers#tier-3
+You can report Tier 3 unrelated issues to Homebrew/* repositories!
+Read the above document before opening any issues or PRs.
+
+peekaboo: This software does not run on macOS versions older than Sonoma.
+Error: peekaboo: An unsatisfied requirement failed this build.
+Tip: run `openclaw doctor` to review skills + requirements.
+Docs: https://docs.openclaw.ai/skills
+│
+◇  Installed sag
+│
+◇  Installed songsee
+│
+◇  Installed sonoscli
+│
+◇  Install failed: summarize (exit 1) — Error: summarize: An unsatisfied requirement failed this build.
+Warning: You are using macOS 12.
+We (and Apple) do not provide support for this old version.
+You may have better luck with MacPorts which supports older versions of macOS:
+  https://www.macports.org
+
+This is a Tier 3 configuration:
+  https://docs.brew.sh/Support-Tiers#tier-3
+You can report Tier 3 unrelated issues to Homebrew/* repositories!
+Read the above document before opening any issues or PRs.
+
+summarize: The arm64 architecture is required for this software.
+Error: summarize: An unsatisfied requirement failed this build.
+Tip: run `openclaw doctor` to review skills + requirements.
+Docs: https://docs.openclaw.ai/skills
+│
+◇  Installed things-mac
+│
+◇  Install failed: video-frames — ✔︎ Patch a5d4c398b411a00ac09d8fe3b66117222323844c
+                                                                                  Warning: You are using macOS 12.
+We (and Apple) do not provide support for this old version.
+You may have better luck with MacPorts which supports older versions of macOS:
+  https://www.macports.org
+
+This is a Tier 3 configuration:
+  https://docs.brew.sh/Support-Tiers#tier-3
+You can report Tier 3 unrelated issues to Homebrew/* repositories!
+Read the above document before opening any issues or PRs.
+
+✔︎ API Source ffmpeg.rb
+✔︎ API Source dav1d.rb
+✔︎ Formula dav1d (1.5.3)
+✔︎ Bottle Manifest lame (3.100)
+✔︎ Bottle lame (3.100)
+✔︎ Bottle Manifest yasm (1.3.0_2)
+✔︎ Bottle yasm (1.3.0_2)
+✔︎ API Source libvpx.rb
+✔︎ API Source opus.rb
+✔︎ API Source sdl2.rb
+✔︎ API Source svt-av1.rb
+✔︎ Formula opus (1.6.1)
+✔︎ API Source x264.rb
+✔︎ API Source x265.rb
+✔︎ Formula libvpx (1.15.2)
+✔︎ Formula svt-av1 (4.0.1)
+✔︎ Patch add-av_stream_get_first_dts-for-chromium.patch
+✔︎ Formula sdl2 (2.32.10)
+✔︎ Patch b354c009a60bcd6d7fc04014e200a1ee9c45c167
+✔︎ Patch 51ae8e922bcc4586ad4710812072289af91492a8
+✔︎ Formula ffmpeg (8.0.1)
+✔︎ Formula x264 (r3222)
+✔︎ Formula x265 (4.1)
+✔︎ Patch a5d4c398b411a00ac09d8fe3b66117222323844c
+Tip: run `openclaw doctor` to review skills + requirements.
+Docs: https://docs.openclaw.ai/skills
+│
+◇  Installed wacli
+│
+◇  Set GOOGLE_PLACES_API_KEY for goplaces?
+│  No
+│
+◇  Set GEMINI_API_KEY for nano-banana-pro?
+│  No
+│
+◇  Set NOTION_API_KEY for notion?
+│  No
+│
+◇  Set OPENAI_API_KEY for openai-image-gen?
+│  No
+│
+◇  Set OPENAI_API_KEY for openai-whisper-api?
+│  No
+│
+◇  Set ELEVENLABS_API_KEY for sag?
+│  No
+│
+◇  Hooks ──────────────────────────────────────────────────────────╮
+│                                                                  │
+│  Hooks let you automate actions when agent commands are issued.  │
+│  Example: Save session context to memory when you issue /new.    │
+│                                                                  │
+│  Learn more: https://docs.openclaw.ai/automation/hooks           │
+│                                                                  │
+├──────────────────────────────────────────────────────────────────╯
+│
+◇  Enable hooks?
+│  Skip for now
+Config overwrite: /Users/dedyirawan/.openclaw/openclaw.json (sha256 73b2780039db2ae262e9b3b30005bcba98f867b750d9240ea193e35af00cc989 -> 99821b7db74f0422a3a5c08798152aa83e5fec3de9cc4de7fa7141b91ef5e773, backup=/Users/dedyirawan/.openclaw/openclaw.json.bak)
+│
+◇  Gateway service runtime ────────────────────────────────────────────╮
+│                                                                      │
+│  QuickStart uses Node for the Gateway service (stable + supported).  │
+│                                                                      │
+├──────────────────────────────────────────────────────────────────────╯
+│
+◑  Preparing Gateway service…│
+◇  Gateway runtime ─────────────────────────────────────────────────────────────────────────╮
+│                                                                                           │
+│  System Node 12.18.0 at /usr/local/bin/node is below the required Node 22+. Using         │
+│  /Users/dedyirawan/.nvm/versions/node/v22.22.0/bin/node for the daemon. Install Node 22+  │
+│  from nodejs.org or Homebrew.                                                             │
+│                                                                                           │
+├───────────────────────────────────────────────────────────────────────────────────────────╯
+◒  Installing Gateway service…
+Installed LaunchAgent: /Users/dedyirawan/Library/LaunchAgents/ai.openclaw.gateway.plist
+Logs: /Users/dedyirawan/.openclaw/logs/gateway.log
+◇  Gateway service installed.
+│
+◇  
+Health check failed: gateway closed (1006 abnormal closure (no close frame)): no close reason
+  Gateway target: ws://127.0.0.1:18789
+  Source: local loopback
+  Config: /Users/dedyirawan/.openclaw/openclaw.json
+  Bind: loopback
+│
+◇  Health check help ────────────────────────────────╮
+│                                                    │
+│  Docs:                                             │
+│  https://docs.openclaw.ai/gateway/health           │
+│  https://docs.openclaw.ai/gateway/troubleshooting  │
+│                                                    │
+├────────────────────────────────────────────────────╯
+│
+◇  Optional apps ────────────────────────╮
+│                                        │
+│  Add nodes for extra features:         │
+│  - macOS app (system + notifications)  │
+│  - iOS app (camera/canvas)             │
+│  - Android app (camera/canvas)         │
+│                                        │
+├────────────────────────────────────────╯
+│
+◇  Control UI ───────────────────────────────────────────────────────────────────────────────╮
+│                                                                                            │
+│  Web UI: http://127.0.0.1:18789/                                                           │
+│  Web UI (with token):                                                                      │
+│  http://127.0.0.1:18789/#token=4df27d5c3e80a68873b43bc44a7fd1bed4bea33c0c870781            │
+│  Gateway WS: ws://127.0.0.1:18789                                                          │
+│  Gateway: not detected (gateway closed (1006 abnormal closure (no close frame)): no close  │
+│  reason)                                                                                   │
+│  Docs: https://docs.openclaw.ai/web/control-ui                                             │
+│                                                                                            │
+├────────────────────────────────────────────────────────────────────────────────────────────╯
+│
+◇  Workspace backup ────────────────────────────────────────╮
+│                                                           │
+│  Back up your agent workspace.                            │
+│  Docs: https://docs.openclaw.ai/concepts/agent-workspace  │
+│                                                           │
+├───────────────────────────────────────────────────────────╯
+│
+◇  Security ──────────────────────────────────────────────────────╮
+│                                                                 │
+│  Running agents on your computer is risky — harden your setup:  │
+│  https://docs.openclaw.ai/security                              │
+│                                                                 │
+├─────────────────────────────────────────────────────────────────╯
+^[│
+◇  Shell completion ───────────────────────────────────────────────────────╮
+│                                                                          │
+│  Shell completion installed. Restart your shell or run: source ~/.zshrc  │
+│                                                                          │
+├──────────────────────────────────────────────────────────────────────────╯
+│
+◇  Dashboard ready ────────────────────────────────────────────────────────────────╮
+│                                                                                  │
+│  Dashboard link (with token):                                                    │
+│  http://127.0.0.1:18789/#token=4df27d5c3e80a68873b43bc44a7fd1bed4bea33c0c870781  │
+│  Opened in your browser. Keep that tab to control OpenClaw.                      │
+│                                                                                  │
+├──────────────────────────────────────────────────────────────────────────────────╯
+│
+◇  Web search (optional) ─────────────────────────────────────────────────────────────────╮
+│                                                                                         │
+│  If you want your agent to be able to search the web, you’ll need an API key.           │
+│                                                                                         │
+│  OpenClaw uses Brave Search for the `web_search` tool. Without a Brave Search API key,  │
+│  web search won’t work.                                                                 │
+│                                                                                         │
+│  Set it up interactively:                                                               │
+│  - Run: openclaw configure --section web                                                │
+│  - Enable web_search and paste your Brave Search API key                                │
+│                                                                                         │
+│  Alternative: set BRAVE_API_KEY in the Gateway environment (no config changes).         │
+│  Docs: https://docs.openclaw.ai/tools/web                                               │
+│                                                                                         │
+├─────────────────────────────────────────────────────────────────────────────────────────╯
+│
+◇  What now ─────────────────────────────────────────────────────────────╮
+│                                                                        │
+│  What now: https://openclaw.ai/showcase ("What People Are Building").  │
+│                                                                        │
+├────────────────────────────────────────────────────────────────────────╯
+│
+└  Onboarding complete. Dashboard opened; keep that tab to control OpenClaw.

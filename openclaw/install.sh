@@ -5,5 +5,8 @@ CURRDIR00=${BASEDIR00##*/}
 FILENAME0=`basename $0`; FILE=$(echo $FILENAME0 | cut -d '.' -f 1)
 echo [$BASEDIR00] [$CURRDIR00] [$FILENAME0] [$FILE]
 echo "......."
+source ~/.zshrc
+nvm install v22
+nvm use v22
 curl -fsSL https://openclaw.ai/install.sh | bash
 exit 0
