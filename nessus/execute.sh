@@ -9,9 +9,11 @@ cd $BASEDIR00
 case "$1" in
   down)
     docker-compose down
+    docker ps -a
     ;;
   up)
     docker-compose up -d
+    docker ps -a
     ;;
   "")
     echo "Invalid argument (missing command). Use: up | down"
@@ -20,5 +22,4 @@ case "$1" in
     echo "Invalid argument $1"
     ;;
 esac
-docker ps -a
 exit 0
